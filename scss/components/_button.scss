@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.button {
+    background-color: $primary-color;
+    padding: .5rem 2rem;
+    border-radius: 35px;
+    color:white;
+
+    &:hover {
+        background-color: white;
+        color: $primary-color;
+        transition: 350ms;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        font-size: .8rem;
+    }
+}
